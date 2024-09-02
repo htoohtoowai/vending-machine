@@ -27,4 +27,9 @@ php -S localhost:8000 -t public
 ## Postman Collections
 vending-machine-system.postman_collection.json
 
-ngrok http http://localhost:8001
+
+choco install ngrok
+
+ngrok config add-authtoken 2lWKk5JvU1rUJk03B5t1elImmnl_7pZKXgkRfpxnSi3Tq5A9X
+
+ngrok http http://localhost:8080
