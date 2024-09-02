@@ -29,7 +29,7 @@ class ProductsController {
             $products = $productModel->all($limit, $offset);
             $totalProducts = $productModel->count();
             $totalPages = ceil($totalProducts / $limit);
-                require 'views/product/list.php';
+                require __DIR__ . '/../views/product/list.php';
         }  catch (\InvalidArgumentException $e) {
             echo "Error: " . htmlspecialchars($e->getMessage());
             exit();
@@ -63,7 +63,7 @@ class ProductsController {
                 header('Location: /products');
                 exit();
             }else{
-                require 'views/product/add.php';
+                require __DIR__ . '/../views/product/add.php';
             }
         }  catch (\InvalidArgumentException $e) {
              
@@ -75,7 +75,7 @@ class ProductsController {
     public function edit($id) {
         $this->checkAdmin();
         $product = $this->model->get($id);
-        require 'views/product/edit.php';
+        require __DIR__ . '/../views/product/edit.php';
     }
 
     public function update($id) {

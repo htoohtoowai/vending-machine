@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"admin\"\r\n}",
+					"raw": "{\r\n  \"username\": \"user\",\r\n  \"password\": \"user\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,12 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/api/v1/login",
-					"protocol": "http",
+					"raw": "https://5c59-2405-9800-b911-2cf2-c554-ea29-18d8-82d8.ngrok-free.app/api/v1/login",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"5c59-2405-9800-b911-2cf2-c554-ea29-18d8-82d8",
+						"ngrok-free",
+						"app"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"v1",
@@ -42,12 +43,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/v1/products",
-					"protocol": "http",
+					"raw": "https://5c59-2405-9800-b911-2cf2-c554-ea29-18d8-82d8.ngrok-free.app/api/v1/products",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"5c59-2405-9800-b911-2cf2-c554-ea29-18d8-82d8",
+						"ngrok-free",
+						"app"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"v1",
@@ -63,12 +65,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/v1/products/1",
-					"protocol": "http",
+					"raw": "https://5c59-2405-9800-b911-2cf2-c554-ea29-18d8-82d8.ngrok-free.app/api/v1/products/1",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"5c59-2405-9800-b911-2cf2-c554-ea29-18d8-82d8",
+						"ngrok-free",
+						"app"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"v1",
@@ -87,7 +90,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjUyODUzODMsImV4cCI6MTcyNTI4ODk4Mywic3ViIjoxLCJyb2xlIjoidXNlciJ9.zYYbaUtP3RTVYq533oxnr3S7f0XxNSaVgy1_5oOMZbs",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjUyOTI2ODQsImV4cCI6MTcyNTI5NjI4NCwic3ViIjoyLCJyb2xlIjoidXNlciJ9.DQUxcCPJtJjFF0uerVrlzBh6liDvLKOQfJkMe6ifiRY",
 							"type": "string"
 						}
 					]
@@ -104,12 +107,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/api/v1/transactions",
-					"protocol": "http",
+					"raw": "https://5c59-2405-9800-b911-2cf2-c554-ea29-18d8-82d8.ngrok-free.app/api/v1/transactions",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"5c59-2405-9800-b911-2cf2-c554-ea29-18d8-82d8",
+						"ngrok-free",
+						"app"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"v1",
@@ -125,12 +129,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/v1/logout",
-					"protocol": "http",
+					"raw": "https://5c59-2405-9800-b911-2cf2-c554-ea29-18d8-82d8.ngrok-free.app/api/v1/logout",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"5c59-2405-9800-b911-2cf2-c554-ea29-18d8-82d8",
+						"ngrok-free",
+						"app"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"v1",

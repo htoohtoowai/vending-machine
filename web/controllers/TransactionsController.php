@@ -30,7 +30,7 @@ class TransactionsController {
             $transactions = $this->model->all($limit, $offset);
             $totalTransactions = $this->model->count();
             $totalPages = ceil($totalTransactions / $limit);
-            require 'views/transaction/list.php';
+            require __DIR__ . '/../views/transaction/list.php';
         } catch (\Exception $e) {
             echo "Error: " . htmlspecialchars($e->getMessage());
             exit();
@@ -67,7 +67,7 @@ class TransactionsController {
             } else {
                 $users = $this->userModel->all();
                 $products = $this->productModel->all();
-                require 'views/transaction/add.php';
+                require __DIR__ . '/../views/transaction/add.php';
             }
         } catch (\Exception $e) {
             echo "Error: " . htmlspecialchars($e->getMessage());
@@ -81,7 +81,7 @@ class TransactionsController {
             $transaction = $this->model->get($id);
             $users = $this->userModel->all();
             $products = $this->productModel->all();
-            require 'views/transaction/edit.php';
+            require __DIR__ . '/../views/transaction/edit.php';
         } catch (\Exception $e) {
             echo "Error: " . htmlspecialchars($e->getMessage());
             exit();

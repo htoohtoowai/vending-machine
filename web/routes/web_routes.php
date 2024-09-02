@@ -30,7 +30,7 @@ $router->addRoute('GET', '/transactions/{id}', 'Web\Controllers\TransactionsCont
 $router->addRoute('GET', '/transactions/create', 'Web\Controllers\TransactionsController@create');
 $router->addRoute('POST', '/transactions/create', 'Web\Controllers\TransactionsController@create');
 $router->addRoute('GET', '/transactions/{id}/edit', 'Web\Controllers\TransactionsController@edit');
-$router->addRoute('POST', '/transactions/{id}/update', 'Web\Controllers\TransactionsController@edit');
+$router->addRoute('POST', '/transactions/{id}/update', 'Web\Controllers\TransactionsController@update');
 $router->addRoute('POST', '/transactions/{id}/delete', 'Web\Controllers\TransactionsController@delete');
 
 

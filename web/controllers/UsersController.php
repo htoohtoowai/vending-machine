@@ -24,7 +24,7 @@ class UsersController {
             $users = $this->model->all($limit, $offset);
             $totalUsers = $this->model->count();
             $totalPages = ceil($totalUsers / $limit);
-            require 'views/user/list.php';
+            require __DIR__ . '/../views/user/list.php';
         } catch (\Exception $e) {
             echo "Error: " . htmlspecialchars($e->getMessage());
             exit();
@@ -60,7 +60,7 @@ class UsersController {
                 header('Location: /users');
                 exit();
             } else {
-                require 'views/user/add.php';
+                require __DIR__ . '/../views/user/add.php';
             }
         } catch (\Exception $e) {
             echo "Error: " . htmlspecialchars($e->getMessage());
@@ -97,7 +97,7 @@ class UsersController {
                 exit();
             }
 
-            require 'views/user/edit.php';
+            require __DIR__ . '/../views/user/edit.php';
         } catch (\Exception $e) {
             echo "Error: " . htmlspecialchars($e->getMessage());
             exit();

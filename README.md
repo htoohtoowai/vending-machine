@@ -22,9 +22,9 @@ cd vending-machine
 
 composer install
 
-php -S localhost:8000 -t api
-php -S localhost:8001 -t web
+php -S localhost:8000 -t public
 
 ## Postman Collections
 vending-machine-system.postman_collection.json
 
+ngrok http http://localhost:8001

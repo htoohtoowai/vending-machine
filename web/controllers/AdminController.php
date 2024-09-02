@@ -16,7 +16,7 @@ class AdminController {
     public function dashboard() {
         $this->checkAdmin();
         try {
-            require 'views/admin/dashboard.php';
+            require __DIR__ . '/../views/admin/dashboard.php';
 
         } catch (\Exception $e) {
             echo "Error: " . htmlspecialchars($e->getMessage());
@@ -52,7 +52,7 @@ class AdminController {
                 exit();
             }
         } else {
-            require 'views/admin/login.php'; 
+            require __DIR__ . '/../views/admin/login.php'; 
         }
     }
 
