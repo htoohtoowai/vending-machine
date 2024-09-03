@@ -10,9 +10,10 @@
             "Api\\Models\\": "api/models/",
             "Web\\Controllers\\": "web/controllers/",
             "Web\\Models\\": "web/models/",
-            "Database\\": "Database/",
-            "Web\\Tests\\": "web/test/",
-            "Api\\Tests\\": "api/test/",
+            "Web\\Config\\": "web/config/",
+            "Api\\Config\\": "api/config/",
+            "Web\\Tests\\": "web/tests/",
+            "Api\\Tests\\": "api/tests/",
             "Web\\Traits\\": "web/traits/"
 
         }
